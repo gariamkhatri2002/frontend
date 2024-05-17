@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box1 {
+            width: 15%;
+            height: 100%;
+            /* background-color: antiquewhite; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box2 {
+            width: 45%;
+            height: 100%;
+            /* background-color: blue; */
+
+        }
+
+        .box3 {
+            width: 30%;
+            height: 100%;
+            /* background-color: rgb(242, 87, 116); */
+        }
+
+        .insidebox1 {
+            width: 90%;
+            height: 23%;
+            background-color: pink;
+            margin-bottom: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .diamond {
+            /* position: relative; */
+            /* z-index: 2; */
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            border: 1px solid white;
+            box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+            background-color: white;
+            text-align: center;
+            transform: rotateZ(45deg);
+            
+        }
+
+        .box2-up {
+            height: 47%;
+            width: 100%;
+            background-color: rgb(237, 120, 200);
+            margin-bottom: 8px;
+            margin-top: 12px;
+            font-size: 50px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box2-down {
+            height: 50%;
+            width: 100%;
+            /* background-color: rgb(151, 159, 156); */
+            margin-top: 0px;
+            display: flex;
+        }
+
+        .left {
+            height: 100%;
+            width: 32%;
+            /* background-color: rgb(234, 143, 7); */
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+
+        }
+
+        .left1 {
+            height: 46%;
+            width: 95%;
+            background-color: pink;
+            /* margin-bottom: 13px; */
+            margin-top: 5px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .right {
+            height: 93%;
+            width: 68%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(237, 120, 200);
+            margin-top: 5px;
+        }
+
+        .box3-up {
+            height: 50%;
+            width: 100%;
+            /* background-color: rgb(210, 218, 221); */
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .box3-down {
+            height: 50%;
+            /* background-color: rgb(243, 122, 16); */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .upbox {
+            height: 45%;
+            width: 95%;
+            background-color: rgb(61, 210, 190);
+            margin-bottom: 4px;
+            margin-top: 9px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .downbox {
+            height: 44%;
+            width: 47%;
+            background-color: pink;
+            /* margin-bottom: 5px; */
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+            margin-left: 5px;
+        }
+        h4{
+            /* text-align: center; */
+
+            font-size: 30px;
+            transform: rotateZ(0deg);
+            /* float: left; */
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="insidebox1">
+                <div class="diamond">
+                   
+                </div>
+            </div>
+            <div class="insidebox1">
+                <div class="diamond"></div>
+                
+
+            </div>
+            <div class="insidebox1">
+                <div class="diamond"></div>
+
+            </div>
+            <div class="insidebox1">
+                <div class="diamond"></div>
+
+            </div>
+        </div>
+        <div class="box2">
+            <div class="box2-up">
+
+                <div class="diamond"></div>
+            </div>
+            <div class="box2-down">
+                <div class="left">
+                    <div class="left1">
+                        <div class="diamond"></div>
+                    </div>
+                    <div class="left1">
+                        <div class="diamond"></div>
+                        
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="diamond"></div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="box3">
+            <div class="box3-up">
+                <div class="upbox">
+                    <div class="diamond"></div>
+                    
+                </div>
+                <div class="upbox">
+                    <div class="diamond"></div>
+
+                </div>
+            </div>
+            <div class="box3-down">
+                <div class="downbox">
+                    <div class="diamond"></div>
+                </div>
+                <div class="downbox">
+                    <div class="diamond"></div>
+                </div>
+                <div class="downbox">
+                    <div class="diamond"></div>
+                </div>
+                <div class="downbox">
+                    <div class="diamond"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html> */
