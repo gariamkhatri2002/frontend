@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            height: 100%;
+            align-items: center;
+            padding: 10px;
+           
+            
+        }
+        .box1{
+            height: 1100px;
+            width: 33%;
+            box-shadow: 0px 0px 34px -13px;
+        }
+        .box2{
+            height: 1150px;
+            width: 63%;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* box-shadow: 1px 1px 1px 1px black; */
+        }
+        .image{
+            height: 28%;
+            width: 100%;
+            /* border: 2px solid green; */
+            position: relative;
+        }
+        .image img{
+            height: 100%;
+            width: 100%;
+            
+        }
+        .image p{
+            font-size: 35px;
+            font-family: sans-serif;
+            
+            
+        }
+        .jane{
+            position: absolute;
+            bottom: 10px;
+            left: 13px;
+        }
+        .icon{
+            height: 18%;
+            /* border: 2px solid yellow; */
+            font-size: 18px;
+            color: grey;
+        }
+       .icon p i{
+            color: #009685;
+            margin: 10px;
+            margin-top: 15px;
+            margin-left: 13px;
+        }
+        .skill{
+            height: 30%;
+            /* border: 1px solid rgb(131, 15, 35); */
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .skill h3{
+            font-size: 22px;
+            font-family: sans-serif;
+            /* margin: 10px; */
+            color: rgb(97, 94, 94);
+        }
+        .skill h3 i{
+            color: #009685;
+            margin: 14px;
+        }
+        label{
+            font-family: sans-serif;
+            color: gray;
+            margin: 15px;
+            margin-left: 15px;
+        }
+        .skill90{
+            height: 5%;
+            width: 85%;
+            /* border: 1px solid black; */
+            text-align: center;
+            color: white;
+            background-color: #009685;
+            border-radius: 10px;
+            margin-left: 12px;
+
+        }
+        .skill80{
+            height: 5%;
+            width: 75%;
+            /* border: 1px solid black; */
+            text-align: center;
+            color: white;
+            background-color: #009685;
+            border-radius: 10px;
+            margin-left: 12px;
+
+        }
+        .skill75{
+            height: 5%;
+            width: 70%;
+            /* border: 1px solid black; */
+            text-align: center;
+            color: white;
+            background-color: #009685;
+            border-radius: 10px;
+            margin-left: 12px;
+
+        }
+        .skill50{
+            height: 5%;
+            width: 48%;
+            /* border: 1px solid black; */
+            text-align: center;
+            color: white;
+            background-color: #009685;
+            border-radius: 10px;
+            margin-left: 12px;
+
+        }
+        .lang{
+            height: 25%;
+            /* border: 1px solid rgb(131, 15, 35); */
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .lang h3{
+            font-size: 20px;
+            font-family: sans-serif;
+            /* margin: 10px; */
+            color: rgb(97, 94, 94);
+        }
+        .lang h3 i{
+            color: #009685;
+            margin: 14px;
+        }
+        .langE{
+            height: 8%;
+            width: 90%;
+            /* border: 1px solid black; */
+            text-align: center;
+            color: white;
+            background-color: #009685;
+            border-radius: 15px;
+            margin-left: 12px;
+
+        }
+        .langS{
+            height: 8%;
+            width: 48%;
+            /* border: 1px solid black; */
+            text-align: center;
+            color: white;
+            background-color: #009685;
+            border-radius: 15px;
+            margin-left: 12px;
+
+        }
+        .langG{
+            height: 8%;
+            width: 22%;
+            /* border: 1px solid black; */
+            text-align: center;
+            color: white;
+            background-color: #009685;
+            border-radius: 15px;
+            margin-left: 12px;
+        }
+        .up{
+            height: 48%;
+            /* border: 2px solid black; */
+            margin-top: 5px;
+            box-shadow: 0px 0px 34px -13px;
+            
+        }
+        .down{
+            height: 48%;
+            /* border: 2px solid blue; */
+            margin-top: 15px;
+            box-shadow: 0px 0px 34px -13px;
+        }
+        .up1{
+            height: 12%;
+            width: 100%;
+            /* border: 1px solid saddlebrown; */
+            display: flex;
+            align-items: center;
+        }
+        .up1 p{
+            font-family: sans-serif;
+            color: gray;
+            font-size: 30px;
+        }
+        .up1 p i{
+            color: #009685;
+            margin: 14px;
+            font-size: 35px;
+        }
+        .up2{
+            height: 30%;
+            /* border: 2px solid rgb(9, 63, 9); */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        
+        }
+        h4{
+            font-family: sans-serif;
+            color:rgb(97, 94, 94);
+            margin: 10px;
+            margin-left: 14px;
+        }
+        .jan{
+            display: flex;
+        }
+        .jan p{
+            font-size: 16px;
+            font-family: sans-serif;
+            color: #009685;
+            margin: 10px;
+            
+        }
+        .jan p i{
+            margin-right: 20px;
+    
+        }
+        .current{
+            height: 25px;
+            width: 70px;
+            background-color: #009685;
+            color: white;
+            font-size: 16px;
+            font-family: sans-serif;
+            margin-top: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+        }
+        .up2 p{
+            margin: 10px;
+            margin-left: 15px;
+            font-family: sans-serif;
+            font-size:15px;
+        }
+        .up3{
+            height: 30%;
+            /* border: 2px solid purple; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+        .up3 p{
+            margin: 10px;
+            margin-left: 15px;
+            font-family: sans-serif;
+            font-size:15px;
+        }
+        .up4{
+            height: 28%;
+            /* border: 1px solid orange; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .up4 p{
+            margin: 10px;
+            margin-left: 15px;
+            font-family: sans-serif;
+            font-size:15px;
+        }
+        .down1{
+            height: 12%;
+            /* border: 1px solid saddlebrown; */
+            display: flex;
+            align-items: center;
+        }
+        .down1 p{
+            font-family: sans-serif;
+            color: gray;
+            font-size: 30px;
+        }
+        .down1 p i{
+            color: #009685;
+            margin: 14px;
+            font-size: 35px;
+        }
+        .down2{
+            height: 30%;
+            /* border: 1px solid rgb(132, 80, 65); */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .down2 p{
+            margin: 10px;
+            margin-left: 15px;
+            font-family: sans-serif;
+            font-size:15px;
+        }
+        .down3{
+            height: 30%;
+            /* border: 1px solid rgb(132, 80, 65); */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .down3 p{
+            margin: 10px;
+            margin-left: 15px;
+            font-family: sans-serif;
+            font-size:15px;
+        }
+        .down4{
+            height: 30%;
+            /* border: 1px solid rgb(132, 80, 65); */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .down4 p{
+            margin: 10px;
+            margin-left: 15px;
+            font-family: sans-serif;
+            font-size:15px;
+        }
+        .down h4{ 
+            font-size: 20px;
+        }
+        .lastbox{
+            height: 130px;
+            margin-top: 10px;
+            font-size: 15px;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: #009685;
+            border-radius: 0px 0px 0px ;
+        }
+        .lastbox p{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .lastbox1{
+            display: flex;
+        }
+        .lastbox1 i{
+            margin-left: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        a{
+            color: white;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="image">
+                 <img src="https://www.w3schools.com/w3images/avatar_hat.jpg">
+                 <div class="jane"><p>Jane doe</p></div>
+            </div>
+            <div class="icon">
+                <p class="font"><i class="fa-solid fa-briefcase"></i>
+                    Designer</p>
+                <p class="font"><i class="fa-solid fa-house-chimney"></i>
+                    London,UK</p>
+                <p class="font"><i class="fa-solid fa-envelope"></i>
+                    ex@mail.com</p>
+                <p class="font"><i class="fa-solid fa-phone"></i>
+                    1122443553</p>
+            </div>
+            <div class="skill">
+                <h3><i class="fa-solid fa-asterisk"></i>Skills</h3>
+                <label for="">Adope Photoshop</label>
+                <div class="skill90">90%</div>
+                <label for="">Photoshop</label>
+                <div class="skill80">80%</div>
+                <label for="">Illustrator</label>
+                <div class="skill75">75%</div>
+                <label for="">Media</label>
+                <div class="skill50">50%</div>
+            </div>
+            <div class="lang">
+                <h3><i class="fa-solid fa-earth-americas"></i>Languages</h3>
+                <label for="">English</label>
+                <div class="langE"></div>
+                <label for="">Spanish</label>
+                <div class="langS"></div>
+                <label for="">German</label>
+                <div class="langG"></div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="up">
+                <div class="up1">
+                    <p><i class="fa-solid fa-suitcase"></i>Work Experience</p>
+                </div>
+                <div class="up2">
+                    <h4>Front End Developer / w3schools.com</h4>
+                     <div class="jan">
+                        <p><i class="fa-regular fa-calendar-days"></i>Jan 2015 -<div class="current">Current</div> 
+                            
+                        </p>
+                     </div>
+                    <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+                </div>
+                <div class="up3">
+                    <h4>Web Developer / something.com</h4>
+                     <div class="jan">
+                        <p><i class="fa-regular fa-calendar-days"></i>Mar 2012 - Dec 2014 </p>
+                    </div>
+                    <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+                </div>
+                <div class="up4">
+                    <h4>Graphic Designer / designsomething.com</h4>
+                     <div class="jan">
+                        <p><i class="fa-regular fa-calendar-days"></i>Jun 2010 - Mar 2012 </p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="down">
+                <div class="down1">
+                    <p><i class="fa-solid fa-certificate"></i>Education</p>
+                </div>
+                <div class="down2">
+                    <h4>W3Schools.com</h4>
+                    <div class="jan">
+                       <p><i class="fa-regular fa-calendar-days"></i>Forever </p>
+                   </div>
+                   <p>Web Development! All I need to know in one place</p>
+                </div>
+                <div class="down3">
+                    <h4>London Business School</h4>
+                    <div class="jan">
+                       <p><i class="fa-regular fa-calendar-days"></i>2013 - 2015</p>
+                   </div>
+                   <p>Master Degree</p>
+                </div>
+                <div class="down4">
+                    <h4>School of Coding</h4>
+                    <div class="jan">
+                       <p><i class="fa-regular fa-calendar-days"></i>2010 - 2013 </p>
+                   </div>
+                   <p> Bachelor Degree</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lastbox">
+        <p>Find me on social media.</p>
+        <div class="lastbox1">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-snapchat"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/">w3.css</a></p>
+    </div>
+    
+</body>
+</html>
