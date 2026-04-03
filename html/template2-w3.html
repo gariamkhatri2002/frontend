@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif,verdana;
+        }
+        .header1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f6f6f6;
+        }
+        .header1-left{
+            width: 75%;
+            background-color: #f6f6f6;
+            display: flex;
+             justify-content: space-between;
+             ul{
+                display: flex;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                }
+                padding:8px;
+                li{
+                    margin-left: 20px;
+                    font-size: 12px;
+                    color: grey;
+                }
+                
+                hr{
+                    margin-left: 20px;
+                }
+                
+            }
+
+        }
+        .ul li a:hover{
+            color:#71CD14;
+        }
+        
+        
+        .header2{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 1.2%;
+            position: sticky;
+            top: 0px;
+            background-color: #FFFFFF;
+            
+        
+            ul{
+                display: flex;
+                align-items: center;
+                list-style: none;
+                li{
+                    margin-left: 40px;
+                    font-size: 12px;
+                    color: black;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+                i{
+                    margin-left: 20px;
+                    font-size: 10px;
+                }
+                
+            }
+            ul i:hover{
+                color: #71CD14;
+            }
+            ul li a:hover{
+                color: #71CD14;
+            }
+           
+        }
+        .image{
+            background-image: url(https://themewagon.github.io/eiser/img/banner/banner-bg.jpg);
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            
+            align-items: center;
+            
+        }
+        .view{
+            /* border: 2px solid red; */
+            margin-left: 15%;
+            line-height: 1.4;
+            font-size: 20px;
+            color: white;
+            button{
+                padding:4% 6%;
+                margin-top: 10px;
+                background-color: #71CD14;
+                color: white;
+                border-radius: 5px;
+
+            }
+            h1{
+                font-size: 50px;
+
+            }
+            span{
+                color: #71CD14;
+            }
+            .h5{
+                font-size: 15px;
+            }
+        }
+        .shallopen{
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid red; */
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .shall{
+            height: 200px;
+            width: 268px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            /* border: 2px solid black; */
+            padding: 20px;
+            box-shadow: 0px 0px 8px rgb(216, 214, 214);
+            line-height: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h5{
+                font-size: 13px;
+            }
+            p{
+                font-size: 13px;
+                color: grey;
+            }
+            i{
+                font-size: 25px;
+                margin-bottom: 15px;
+                
+                
+            }
+        }
+        .feature{
+            /* border: 2px solid black; */
+            line-height: 2.5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+            
+            h1{
+                font-size: 20px;
+                padding: 6px 22px;
+                background-color: #FFFFFF;
+                box-shadow: 0px 0px 2px rgb(206, 197, 197);
+            }
+            p{
+                color: grey;
+                font-size: 16px;
+                margin-top: 8px;
+            }
+            .product{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        .featured-product{
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+            flex-wrap: wrap;
+        }
+        .ment{
+            height: 500px;
+            /* width: 35%; */
+            /* padding: 1%; */
+            /* border: 2px solid red; */
+            /* margin-left: 25px;
+            margin-top: 30px; */
+            line-height: 2.2;
+            box-shadow: 0px 0px 8px rgb(236, 230, 230);
+            margin: 12px 33px;
+            
+            img{
+                height:400px;
+                width: 100%;
+                
+            }
+            h4{
+                font-family: sans-serif;
+                font-size: 13px;
+                color:#4a4a4a;;
+            }
+            span{
+                font-size: 20px;
+                
+            }
+            del{
+                font-size: 12px;
+                color: grey;
+                margin-left: 15px;
+            }
+            h4,span{
+                margin-left:20px ;
+            }
+            a h4:hover{
+                color: #71CD14;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+        .discover{
+            /* border: 2px solid black; */
+            background-image: url(https://themewagon.github.io/eiser/img/offer-bg.png);
+            height: 80vh;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            
+            
+        }
+        .discover1{
+            /* margin-left: 200px; */
+            line-height: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 150px;
+
+            h6{
+               font-size:20px;
+               color: #4a4a4a;
+            }
+            h1{
+               font-size: 80px;
+            }
+            button{
+                background-color: #71CD14;
+                color: white;
+                padding: 15px 25px;
+                border-radius: 8px;
+                border: none;
+                font-size: 10px;
+            }
+            p{
+                margin-top: 8px;
+            }
+           
+        }
+        .discover1 button:hover{
+            background-color: #f6f6f6;
+            border: 1px solid #71CD14;
+            color: #71CD14;
+        }
+        .bar{
+            display: none;
+        }
+        .newproduct{
+
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            padding-bottom: 40px;
+            .newleft{
+                background-color: #f6f6f6;
+                /* border: 2px solid black; */
+                width: 35%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 60px 0px; 
+                
+                p,h1,button,h3,img{
+                    /* font-family: sans-serif; */
+                    margin: 20px;
+                }
+                button{
+                    background-color: #71CD14;
+                    color: white;
+                    padding: 10px 30px;
+                    border: none;
+                    border-radius: 5px;
+                }
+                p{
+                    font-size: 20px;
+                    color: rgb(111, 108, 108);
+                    font-family: sans-serif;
+                }
+                h3{
+                    font-size: 30px;
+                }
+            }
+            .newright{
+                width: 35%;
+                margin-left: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                
+                .newright-box{
+                    width: 250px;
+                    height: 310px;
+                }
+            }
+        }
+        .up{
+            height: 75%;
+            /* width: 100%; */
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .down{
+            height: 25%;
+            box-shadow: 0px 0px 8px rgb(228, 225, 225);
+            padding: 5px 10px;
+            line-height: 1.8;
+        }
+        .down p{
+              font-size: 15px;
+        }
+        .down span{
+            display: flex;
+            
+            del{
+                padding-left: 15px;
+                font-size: 15px;
+                color: rgb(156, 152, 152);
+            }  
+        }
+        #downbox{
+            margin-top: 50px;
+        }
+        .inspired{
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            padding-top: 50px;
+        }
+        .inspired1{
+            width: 80%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            
+        }
+        .inspired-box{
+               height: 330px;
+               width: 270px;
+        }
+        .blog{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 60px;
+        }
+        .blog1{
+            
+            margin:0px 30px;
+            width: 330px;
+            
+            
+        }
+        .blog-up img{
+            transition: all 2s ease-out;
+        }
+        .blog-down1{
+            padding: 15px 0px;
+            a{
+                text-decoration: none;
+                color: #797979;
+                font-size: 14px;
+                font-family: "Roboto",sans-serif;
+            
+            }
+            i{
+                margin-left:18px;
+                margin-right:10px;
+            }
+        }
+        .blog-down2 {
+            margin: 20px 0px;
+            a{
+                text-decoration: none;
+                font-size: 22px;
+                color:black;
+                font-family: "Roboto",sans-serif;
+                line-height: 30px;
+            
+            }
+            
+            
+        }
+        .blog-down2 p{
+              font-size: 15px;
+              margin-top: 20px;
+              font-family:"Roboto",sans-serif;
+              color: #989494;
+              line-height: 22px;
+        }
+        .blog-down3 a{
+            margin-top: 20px;
+            font-size: 12px;
+            color: black;
+        }
+        .blog-down2 a:hover{
+            color: #71CD14;
+        }
+        .blog-down1 a:hover{
+            color: #71CD14;
+        }
+        
+        
+        @media(min-width:427px) and (max-width:786px){
+            .header1{
+                display: none;
+            }
+            .bar{
+                display: block;
+                font-size: 25px;
+                color: rgb(19, 19, 134);
+            }
+            .header2 ul li{
+                display:none;
+            }
+            .header2 ul a{
+                display: none;
+            }
+            .discover{
+                background-image: none;
+                background-color: #f6f6f6;
+                padding: 0px 40px;
+            
+            }
+            .discover1 h6{
+                font-size: 20px;
+            }
+            
+            .discover1{
+                
+                padding-left: 10px;
+
+            }
+            .discover1 h1{
+                font-size: 75px;
+            }
+        }
+        @media(max-width:426px){
+
+            .image{
+                background-position: initial;
+                width: 100%;
+            }
+            .view{
+                font-size: 15px;
+                margin-left: 20px;
+                line-height: 1.5;
+                
+            }
+            .view h1{
+                font-size: 35px;
+                
+            }
+            .view button{
+                  margin-top: 30px;
+                  padding: 10px 10px;
+            }
+            .discover{
+                background-image: none;
+                background-color: #f6f6f6;
+                padding: 0px 40px;
+            
+            }
+            .discover1 h6{
+                font-size: 15px;
+            }
+            .discover1{
+                
+                padding-left: 10px;
+
+            }
+            .discover1 h1{
+                font-size: 50px;
+            }
+        }
+
+        .product{
+            display: flex;
+            /* justify-content: space-around; */
+            flex-wrap: wrap;
+
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="header1">
+        <div class="header1-left">
+            <ul>
+                <li>phone:+0125625235</li><hr>
+                <li>EMAIL:INFO@EISER.COM</li>
+            </ul>
+             <ul class="ul">
+                <li><a href="">GIFT CARD</a></li><hr>
+                <li><a href="">TRACK ORDER</a></li><hr>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="header2">
+        <img src="https://themewagon.github.io/eiser/img/logo.png" alt="" height="30px" width="120px">
+    <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">SHOP</a></li>
+        <li><a href="">BLOG</a></li>
+        <li><a href="">PAGES</a></li>
+        <LI><a href="">CONTACT</a></LI>
+    </ul>
+        <ul>
+           <a href=""><i class="fa-solid fa-magnifying-glass"></i></a> 
+           <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href=""><i class="fa-regular fa-user"></i></a>
+            <a href=""><i class="fa-regular fa-heart"></i></a>
+        </ul>
+        <div class="bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="image">
+        <div class="view">
+            <h5>MEN COLLECTION</h5>
+            <h1><span>Show </span> Your</h1>
+            <h1>Personal <span>Style</span> </h1>
+            
+            <h5>Fowl saw dry which a above together place.</h5>
+            <button>VIEW COLLECTION</button>
+
+        </div>
+
+    </div>
+    <div class="shallopen">
+        <div class="shall">
+            <i class="fa-solid fa-sack-dollar"></i>
+            <h5>MONEY BACK GURANTEE</h5>
+            <p>Shall open divide a one</p>
+            
+        </div>
+        <div class="shall">
+            <i class="fa-solid fa-truck"></i>
+            <h5>FREE DELIVERY</h5>
+            <p>Shall open divide a one</p>
+        </div>
+        <div class="shall">
+            <i class="fa-solid fa-headphones"></i>
+            <h5>ALWAY SUPPORT</h5>
+            <p>Shall open divide a one</p>
+        </div>
+        <div class="shall">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h5>SECURE PAYMENT</h5>
+            <p>Shall open divide a one</p>
+        </div>
+    </div>
+    <div class="feature">
+        <h1>FEATURED PRODUCT</h1>
+        <p>Bring called seed first of third give itself now ment</p>
+    </div>
+    <div class="featured-product">
+        <div class="product">
+        <div class="ment">
+            <img src="https://themewagon.github.io/eiser/img/product/feature-product/f-p-1.jpg" alt="">
+            <a href=""><h4>LATEST MEN’S SNEAKER</h4></a>
+            <span>$25.00</span>
+            <del>$35.00</del>
+        </div>
+        <div class="ment">
+            <img src="https://themewagon.github.io/eiser/img/product/feature-product/f-p-2.jpg" alt="">
+            <a href=""><h4>RED WOMEN PURSES</h4></a>
+            <span>$25.00</span>
+            <del>$35.00</del>
+        </div>
+        <div class="ment">
+            <img src="https://themewagon.github.io/eiser/img/product/feature-product/f-p-3.jpg" alt="">
+            <a href=""><h4>MEN STYLIST SMART WATCH </h4></a>
+           <span>$25.00</span>
+            <del>$35.00</del>
+        </div>
+    </div>
+    </div>
+    <div class="discover">
+         <div class="discover1">
+              <h6>ALL MEN’S COLLECTION</h6>
+              <h1>50% off</h1>
+              <a href=""><button>DISCOVER NOW</button></a>
+              <p>Limited Time Offer</p>
+         </div>
+    </div>
+    <div class="feature">
+        <h1>NEW PRODUCT</h1>
+        <p>Bring called seed first of third give itself now ment</p>
+    </div>
+    <div class="newproduct">
+        <div class="newleft">
+            <p>COLLECTION OF 2019</p>
+            <h1>MEN’S SUMMER T-SHIRT</h1>
+             <img src="https://themewagon.github.io/eiser/img/product/new-product/new-product1.png" alt="">
+             <h3>$120.70</h3>
+             <button>ADD TO CART                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </button>
+        </div>
+        <div class="newright">
+            <div class="newright-box">
+                <div class="up">
+                    <img src="https://themewagon.github.io/eiser/img/product/new-product/n1.jpg" alt="">
+                </div>
+                <div class="down">
+                    <p>NIKE LATEST SNEAKER</p>
+                    <span><h3>$25.00</h3><del>$35.00</del></span>
+                    
+                </div>
+                
+            </div>
+            <div class="newright-box">
+                <div class="up">
+                    <img src="https://themewagon.github.io/eiser/img/product/new-product/n2.jpg" alt="">
+                </div>
+                <div class="down">
+                    <p>QUARTZ HAND WATCH</p>
+                    <span><h3>$25.00</h3><del>$35.00</del></span>
+                </div>
+            </div>
+            <div class="newright-box" id="downbox">
+                <div class="up">
+                    <img src="https://themewagon.github.io/eiser/img/product/new-product/n3.jpg" alt="">
+                </div>
+                <div class="down">
+                    <p>MEN’S DENIM JEANS</p>
+                    <span><h3>$25.00</h3><del>$35.00</del></span>
+                </div>
+            </div>
+            <div class="newright-box" id="downbox">
+                <div class="up">
+                    <img src="https://themewagon.github.io/eiser/img/product/new-product/n4.jpg" alt="">
+                </div>
+                <div class="down">
+                    <p>ADIDAS SPORT SHOE</p>
+                    <span><h3>$25.00</h3><del>$35.00</del></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feature">
+        <h1>INSPIRED PRODUCTS</h1>
+        <p>Bring called seed first of third give itself now ment</p>
+    </div>
+    <div class="inspired">
+        <div class="inspired1">
+            <div class="inspired-box">
+                <div class="up">
+                    <img src="https://themewagon.github.io/eiser/img/product/inspired-product/i1.jpg" alt="">
+                </div>
+                <div class="down">
+                    <p>NIKE LATEST SNEAKER</p>
+                    <span><h3>$25.00</h3><del>$35.00</del></span>
+                </div>
+            </div>
+            <div class="inspired-box">
+                <div class="up">
+                    <img src="https://themewagon.github.io/eiser/img/product/inspired-product/i2.jpg" alt="">
+                </div>
+                <div class="down">
+                    <p>NIKE LATEST SNEAKER</p>
+                    <span><h3>$25.00</h3><del>$35.00</del></span>
+                </div>
+            </div>
+            <div class="inspired-box">
+                <div class="up">
+                    <img src="https://themewagon.github.io/eiser/img/product/inspired-product/i3.jpg" alt="">
+                </div>
+                <div class="down">
+                    <p>NIKE LATEST SNEAKER</p>
+                    <span><h3>$25.00</h3><del>$35.00</del></span>
+                </div>
+            </div>
+            <div class="inspired-box">
+                <div class="up">
+                    <img src="https://themewagon.github.io/eiser/img/product/inspired-product/i4.jpg" alt="">
+                </div>
+                <div class="down">
+                    <p>NIKE LATEST SNEAKER</p>
+                    <span><h3>$25.00</h3><del>$35.00</del></span>
+                </div>
+            </div>
+            <div class="inspired-box">
+                <div class="up">
+                    <img src="https://themewagon.github.io/eiser/img/product/inspired-product/i5.jpg" alt="">
+                </div>
+                <div class="down">
+                    <p>NIKE LATEST SNEAKER</p>
+                    <span><h3>$25.00</h3><del>$35.00</del></span>
+                </div>
+            </div>
+            <div class="inspired-box">
+                <div class="up">
+                    <img src="https://themewagon.github.io/eiser/img/product/inspired-product/i6.jpg" alt="">
+                </div>
+                <div class="down">
+                    <p>NIKE LATEST SNEAKER</p>
+                    <span><h3>$25.00</h3><del>$35.00</del></span>
+                </div>
+            </div>
+            <div class="inspired-box">
+                <div class="up">
+                    <img src="https://themewagon.github.io/eiser/img/product/inspired-product/i7.jpg" alt="">
+                </div>
+                <div class="down">
+                    <p>NIKE LATEST SNEAKER</p>
+                    <span><h3>$25.00</h3><del>$35.00</del></span>
+                </div>
+            </div>
+            <div class="inspired-box">
+                <div class="up">
+                    <img src="https://themewagon.github.io/eiser/img/product/inspired-product/i8.jpg" alt="">
+                </div>
+                <div class="down">
+                    <p>NIKE LATEST SNEAKER</p>
+                    <span><h3>$25.00</h3><del>$35.00</del></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feature">
+        <h1> LATEST BLOG</h1>
+        <p>Bring called seed first of third give itself now ment</p>
+    </div>
+    <div class="blog">
+        <div class="blog1">
+            <div class="blog-up">
+                <img src="https://themewagon.github.io/eiser/img/b1.jpg" alt="">
+            </div>
+            <div class="blog-down">
+                <div class="blog-down1">
+                    <a href="">By Admin</a>
+                    <a href=""><i class="fa-regular fa-face-smile"></i>2 Comments</a>
+                </div>
+                <div class="blog-down2">
+                    <a href="templatew3.html">
+                        <h5>Ford clever bed stops your sleeping partner hogging the whole</h5></a>
+                    <P>Let one fifth i bring fly to divided face for bearing the divide unto seed winged divided light Forth.</P>    
+                </div>
+                <div class="blog-down1 blog-down3"> 
+                    <a href="">LEARN MORE <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="blog1">
+            <div class="blog-up">
+                <img src="https://themewagon.github.io/eiser/img/b2.jpg" alt="">
+            </div>
+            <div class="blog-down">
+                <div class="blog-down1">
+                    <a href="">By Admin</a>
+                    <a href=""><i class="fa-regular fa-face-smile"></i>2 Comments</a>
+                </div>
+                <div class="blog-down2">
+                    <a href="templatew3.html">
+                        <h5>Ford clever bed stops your sleeping partner hogging the whole</h5></a>
+                    <P>Let one fifth i bring fly to divided face for bearing the divide unto seed winged divided light Forth.</P>    
+                </div>
+                <div class="blog-down1 blog-down3"> 
+                    <a href="">LEARN MORE <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="blog1">
+            <div class="blog-up">
+                <img src="https://themewagon.github.io/eiser/img/b3.jpg" alt="">
+            </div>
+            <div class="blog-down">
+                <div class="blog-down1">
+                    <a href="">By Admin</a>
+                    <a href=""><i class="fa-regular fa-face-smile"></i>2 Comments</a>
+                </div>
+                <div class="blog-down2">
+                    <a href="templatew3.html">
+                        <h5>Ford clever bed stops your sleeping partner hogging the whole</h5></a>
+                    <P>Let one fifth i bring fly to divided face for bearing the divide unto seed winged divided light Forth.</P>    
+                </div>
+                <div class="blog-down1 blog-down3"> 
+                    <a href="">LEARN MORE <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        
+    </footer>
+    
+    
+</body>
+</html>

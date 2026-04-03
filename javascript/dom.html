@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Signup Form</h1>
+
+    <input type="text" placeholder="Enter your name" class="inp">
+    <br> <br>
+
+    <input type="email" placeholder="Enter your email" class="inp">
+    <br> <br>
+
+    <input type="number" placeholder="Enter your mobile number" class="inp">
+    <br> <br>
+    <input type="password" placeholder="Enter your password" class="inp">
+    <br> <br>
+
+    <button id="btn">submit</button>
+
+    <script>
+        document.getElementById("btn").onclick=function(){
+            let val=document.getElementsByClassName("inp");
+            for(let i=0;i<val.length;i++){
+               
+                console.log(val[i].value);
+            }
+
+            
+        }
+    </script>
+</body>
+</html>

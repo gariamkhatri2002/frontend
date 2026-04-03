@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .container{
+            height: 90vh;
+            width: 100%;
+            background-image: url(slide_01.jpg);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        header{
+            background-color: black;
+            height: 80px;
+            display: flex;
+        }
+        .left{
+            width: 35%;
+            height: 100%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .left h1{
+           text-transform: uppercase;
+           font-size: 25px;
+           color: white;
+        }
+        .mid{
+             width: 10%;
+        }
+        .right{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        
+        li{
+            /* text-decoration: none; */
+            list-style: none;
+            text-transform: capitalize;
+            font-size: 18px;
+            color: white;
+        }
+        .image_text{
+            text-transform: uppercase;
+            line-height: 1.5;
+            word-spacing: 8px;
+        }
+        .h5container{
+            font-size: 18px;
+        }
+        .h1container{
+            font-size: 50px;
+            letter-spacing: 10px;
+            color: white;
+        }
+        .outer_div{
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            
+
+        }
+        .latestproducts{
+            /* height: 50px; */
+            width: 80%;
+            padding: 15px;
+            box-shadow: 0px 0px 6px rgb(239, 230, 230);
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+        .latestproducts p{
+            font-size: 30px;
+            text-transform: capitalize;
+        }
+        .latestproducts h6{
+            font-size: 10px;
+            text-transform: uppercase;
+            color: red;
+        }
+        .productbox{
+            width: 85%;
+            border: 2px solid green;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            
+        }
+        .subproductbox{
+            height: 350px;
+            width: 373px;
+            border: 2px solid blue;
+            margin: 5px;
+            margin-bottom: 25px;
+            
+        }
+        .subproductbox-up{
+            height: 40%;
+            width: 100%;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <h1>sixteen <span style="color:red">clothing</span></h1>
+        </div>
+        <div class="mid"></div>
+        <div class="right">
+            <li>home</li>
+            <li>our products</li>
+            <li>about us</li>
+            <li>contact us</li>
+        </div>
+    </header>    
+    <div class="container">
+       <h5 class="image_text h5container" style="color: red;">best offer</h5>
+       <h1 class="image_text h1container">now arrivals on sale</h1>
+    </div>
+    <div class="outer_div">
+        <div class="latestproducts">
+            <p>latest products</p>
+            <h6>view all products ></h6>
+            
+        </div>
+        <div class="productbox">
+            <div class="subproductbox">
+                <div class="subproductbox-up">
+                    <img src="product_01.jpg" alt="image not found">
+                </div>
+                <div class="subproductbox-down"></div>
+            </div>
+            <div class="subproductbox"></div>
+            <div class="subproductbox"></div>
+            <div class="subproductbox"></div>
+            <div class="subproductbox"></div>
+            <div class="subproductbox"></div>
+        </div>
+    </div>
+</body>
+</html>
